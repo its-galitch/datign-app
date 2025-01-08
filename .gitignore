@@ -17,6 +17,7 @@
 .vs/*
 .vscode
 DatingApp.sln.DotSettings.user
+API/obj
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
