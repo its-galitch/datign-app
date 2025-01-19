@@ -18,6 +18,8 @@
 .vscode
 DatingApp.sln.DotSettings.user
 API/obj/*
+API/dating.db-shm
+API/dating.db-wal
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
