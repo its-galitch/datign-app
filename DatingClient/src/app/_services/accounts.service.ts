@@ -43,7 +43,7 @@ export class AccountsService {
     this.currentUser.set(null);
   }
 
-  setCurrentUser() {
+  readCurrentUser() {
     const userString = localStorage.getItem('user');
     if (userString) {
       const user = JSON.parse(userString);
