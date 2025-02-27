@@ -1,6 +1,6 @@
 import { Component, output, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { AccountsService } from '../_services/accounts.service';
+import { AccountService } from '../_services/account.service';
 import {ToastrService} from "ngx-toastr";
 
 @Component({
@@ -11,7 +11,7 @@ import {ToastrService} from "ngx-toastr";
   styleUrl: './register.component.scss'
 })
 export class RegisterComponent {
-  #accountService = inject(AccountsService);
+  #accountService = inject(AccountService);
   #toastrService = inject(ToastrService);
   model: any = {};
   cancelRegister = output<boolean>();

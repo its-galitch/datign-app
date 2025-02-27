@@ -1,6 +1,6 @@
 import { Component, inject, computed } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { AccountsService } from '../_services/accounts.service';
+import { AccountService } from '../_services/account.service';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { RouterLink, RouterLinkActive, Router } from "@angular/router";
 import {ToastrService} from "ngx-toastr";
@@ -21,7 +21,7 @@ import {TitleCasePipe} from "@angular/common";
   styleUrl: "./nav.component.scss"
 })
 export class NavComponent {
-  #accountService = inject(AccountsService);
+  #accountService = inject(AccountService);
   #router = inject(Router);
   #toastrService = inject(ToastrService);
   userName = computed(() => this.#accountService.currentUser()?.username);
