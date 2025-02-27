@@ -1,7 +1,7 @@
-import { HttpClient } from '@angular/common/http';
-import { Injectable, inject, signal } from '@angular/core';
-import { User } from '../_models/user';
-import { map, Observable, tap } from 'rxjs';
+import {HttpClient} from '@angular/common/http';
+import {inject, Injectable, signal} from '@angular/core';
+import {User} from '../_models/user';
+import {Observable, tap} from 'rxjs';
 import {environment} from "../../environments/environment";
 
 @Injectable({

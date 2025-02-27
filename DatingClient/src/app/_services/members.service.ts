@@ -2,7 +2,6 @@ import {inject, Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {environment} from "../../environments/environment";
 import {Member} from '../_models/member';
-import {AccountService} from "./account.service";
 
 
 @Injectable({
@@ -10,7 +9,6 @@ import {AccountService} from "./account.service";
 })
 export class MembersService {
   #http = inject(HttpClient);
-  #accountService = inject(AccountService);
   #baseUrl =  environment.apiUrl;
   #usersDomain = 'users'
 
